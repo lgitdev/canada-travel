@@ -14,8 +14,9 @@ export class Map implements AfterViewInit {
   ngAfterViewInit(): void {
     this.map = L.map('map', {
       center: [46.8139, -71.2082], // Québec City
-      zoom: 6,
+      zoom: 10,
     });
+
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
